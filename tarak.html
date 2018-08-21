@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>login page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<title>welcome</title>
+</head>
+<script> 
+function search() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("sInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}</script>
+
+<script>
+function video1()
+{
+window.alert("video is not available at this moment");
+}
+</script>
+
+
+<script>
+function voice1()
+{
+window.alert("please connect mic");
+}
+</script>
+
+
+<script>
+function Fav()
+{
+window.alert("Added to Favourites!");
+}
+</script>
+
+<body>
+	<div class="container">
+  <div class="row">
+    <div class="col-sm-1" style="background-color:black; height:800px; width:80px;">
+      <div class="panel-body">
+        <div class="vertical-menu" style="position:absolute;left:0;">
+  <a href="#"><img src="img\wp.png" height="40px" width="30px"></a>
+  <a href="#"><img src="img\gm.png" height="40px" width="30px"></a>
+  <a href="#"><img src="img\s.jpg" height="40px" width="30px"></a>
+  <a href="#"><img src="img\tw.jpg" height="40px" width="30px"></a>
+<a href="#">
+          <span class="glyphicon glyphicon-plus" style="position:relative;top:0;left:10px;"></span>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2" style="background-color:#1A1A1A; height:800px; width:150px;">
+      <div class="panel-body" >
+<div class="vertical-menu" style="position:absolute; left:0; ">
+  <a href="#" style="background-color:#1A1A1A;">All<span style="position:absolute;right:0;">99+ &nbsp</span></a>
+  <a href="#" style="background-color:#1A1A1A;">Messages<span style="position:absolute;right:0;">81 &nbsp</span></a>
+<hr style="opacity:.3;">
+  <a href="#" style="background-color:#1A1A1A;"><b>Unread</b><span style="position:absolute;right:0;">5 &nbsp</span></a>
+  <a href="#" style="background-color:#1A1A1A;">important<span style="position:absolute;right:0;">2 &nbsp</span></a>
+<hr style="opacity:.3;">
+  <a href="#" style="background-color:#1A1A1A;">Team</a>
+<a href="#" style="background-color:#1A1A1A;">Groups</a>
+  <a href="#" style="background-color:#1A1A1A;">channels<span style="position:absolute;right:0;">0 &nbsp</span></a>
+  <a href="#" style="background-color:#1A1A1A;">Location<span style="position:absolute;right:0;">1 &nbsp</span></a>
+  <a href="#" style="background-color:#1A1A1A;">Media<span style="position:absolute;right:0;">5 &nbsp</span></a>
+<hr style="opacity:.3;">
+  <a href="#" style="background-color:#1A1A1A;">Help</a>
+  <a href="#" style="background-color:#1A1A1A;">Settings</a>
+</div>
+</div>
+    </div> 
+   <div id="cc" class="col-sm-3" style="background-color:#4D4A4A; height:800px; width:200px;">
+    <div class="col-sm-3" style="background-color:#4D4A4A;height:800px;width:200px;">     
+     <div class="panel-body" style="background-color:#4D4A4A;position:absolute;left:0;right:0;height:62px;">
+       <span class="glyphicon glyphicon-search"style="color:white;"> <input type="text" id="sInput" onkeyup="search()" placeholder="search" style="color:white;background-color:#4D4A4A;"></span> </div>
+       <div class="panel-body"><div class="vertical-menu" style="position:absolute;left:0;right:0;top:62px;height:500px;width:200px; ">
+  <ul id="myUL">
+  <li style="color:green;"><a href="page2.html"><img src="img\rsm.jpg" height="50px" width="50px" class="img-circle"> Rashmika</a></li>
+  <li style="color:green;"><a href="sal.html"><img src="img\sal.jpg" height="50px" width="50px" class="img-circle"> salman</a></li>
+  <li><a href="nani.html"><img  src="img\nani.jpeg" class="img-circle" height="50px" width="50px"  > Nani</a></li>
+  <li><a href="Tarak.html"><img src="img\ntr.jpg" height="50px" width="50px"  class="img-circle"> Tarak</a></li>
+ <li><a href="mom.html"><img src="img\momm.jpg" height="50px" width="50px"  class="img-circle"> mom<br></a></li>
+ <li><a href="rakul.html"><img src="img\rakul.jpg" height="50px" width="50px"  class="img-circle"> Rakul</a></li>
+</ul>
+</div></div>
+     </div>
+    </div>
+    <div class="col-sm-4" style="background-color:#F3EBEB; height:800px; width:400px;">
+    	<div class="panel-body" style="background-color:green;position:absolute;left:0;right:0;height:62px; width: 400px;">
+
+
+<label style="color:black;position:relative;left:px;">tarak </label>
+<button onclick="video1()" style="height:2em;width:2em;position:absolute;top:16px;bottom:10px;right:10px;"><span class="glyphicon glyphicon-facetime-video"></span></button>
+
+<button onclick="voice1()" style="height:2em;width:2em;position:absolute;top:16px;bottom:10px;right:50px;"><span class="glyphicon glyphicon-earphone"></span></button>
+
+<button onclick="fav()" style="height:2em;width:2em;position:absolute;top:16px;bottom:10px;right:90px;"><span class="glyphicon glyphicon-star-empty" style="color:black;"></span></button>
+     </div>
+<hr style="position:relative;top:40px;">
+
+<img src="img\ravinder.png" style="height:500px;width:350px;top:10px;left:0;border-radius:10px;"> 
+
+  <panel style=";background-color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+left:0;
+    width: 400px;
+    height:400px;
+    border: 1px solid white;
+    ">
+<button style="width:3em;height:3em;border-radius:10px 10px;"><img src="img\pin.png" height="30px" width="30px">
+</button>
+<input type="text" placeholder="  Type your message..." style="height:40px;width:265px;border-radius:10px 10px; border-style:solid;color:black;border-color:#2F4F4F;background-color:#e6e6e6;">
+<button style="height:3em;width:3em;border-radius:30px 30px; position:absolute;top:0px;right:45px;"><img src="img\send.png" height="40px" width="40px" style="position:relative;right:7px; bottom:2px;:0;border-radius:30px 30px;"></button>
+
+    </div>
+ <div class="col-sm-2" style="background-color:white; height:800px; width:200px;">
+<img src="img\ntr.jpg" height="150px" width="180px" style="position:absolute;top:100px;left:10px; border-radius:10px;"> 
+<div style="position:absolute;top:300px;color:black;left:10px;">Nickname</div>
+<div style="position:absolute;top:300px;color:black;right:10px;"><b>NTR</b></div>
+
+<div style="position:absolute;top:330px;color:black;left:10px;">Phone:</div>
+<div style="position:absolute;top:330px;color:black;right:10px;"><b>7770008504</b></div>
+
+<div style="position:absolute;top:360px;color:black;left:10px;">Date of Birth:</div>
+<div style="position:absolute;top:360px;color:black;right:10px;"><b>20 may 1983</b></div>
+
+<div style="position:absolute;top:390px;color:black;left:10px;">Gender:</div>
+<div style="position:absolute;top:390px;color:black;right:10px;"><b>Male</b></div>
+
+<div style="position:absolute;top:420px;color:black;left:10px;">Language:</div>
+<div style="position:absolute;top:420px;color:black;right:10px;"><b>English</b></div>
+</div>
+  
+
+</div>
+</div>
+
+
+</body>
+</html>
+</panel></div></div></div></body></html>

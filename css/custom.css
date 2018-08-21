@@ -1,0 +1,16 @@
+/*custom file of css*/
+.jumbotron{
+	background-color: skyblue;
+	    border-radius: 6px ;
+}
+ .vertical-menu{
+ 	width: 200px;
+ }
+ .vertical-menu a {
+    background-color:black;
+    display: block;
+    padding: 10px;
+	border-radius:10px;
+	color: white;
+
+}
