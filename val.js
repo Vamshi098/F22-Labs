@@ -1,6 +1,7 @@
-<script>
+
  function checkForm(form)
-{
+
+  {
 
   if(form.email.value==""){
     alert("email should not be empty!");
